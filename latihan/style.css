@@ -36,6 +36,10 @@
             cursor: pointer;
             
         }
+        .menu .menu-link{
+            display: flex;
+            justify-content: space-between;
+        }
         .container{
             margin: 0 auto;
             width: 60%;
@@ -198,9 +202,15 @@
             .menu ul{
                 display: none;
             }
-            #nav-toggle:checked + label + ul{
+            #nav-toggle:checked + label + .menu-link{
                 display: flex;
                 flex-direction: column;
-                margin-left: -5;
+                margin-left: -10;
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: -10;
+                }
+                
             }
         }
